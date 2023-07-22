@@ -172,6 +172,33 @@
 
   <div class="container2">
     <br>
+    <form action="/search" method="get">
+      <input type="text" name="q" placeholder="Search...">
+      <input type="submit" value="Search">
+    </form>
+    <style>
+      .search {
+        width: 200px;
+        height: 30px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-right: 10px;
+        float: right;
+      }
+      
+      .search input {
+        font-size: 16px;
+        outline: none;
+        color: #333;
+      }
+      
+      .search input:focus {
+        border-color: #333;
+      }
+      
+      </style>
+    <br>
     <p style="background-color: #555; color: white; text-align: center; border-radius: 70px; width: 86%;">
         <br>
         <h1>TSP Protocol</h1>
