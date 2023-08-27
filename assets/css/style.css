@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color : #090b0e;
+    --secondary-color: #fff;
+    --main-border-color: rgb(29, 29, 29);
+
+    --main-font: 'Syne', sans-serif;
+
+}
+body {
+    background-color: var(--main-color);
+    font-family: var(--main-font);
+}
+.navbar {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    min-height: 10vh;
+    border-bottom: 1px solid var(--main-border-color);
+  
+}
+.navbar .main-brand {
+ 
+    min-height: 15vh;
+    max-height: 15vh;
+   
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .main-brand .brand {
+    font-size: 35px;
+    padding: 5px;
+    border-bottom: 1px solid var(--main-border-color);
+    font-weight: 900;
+    color: var(--secondary-color);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 450px) {
+    .navbar .main-brand .brand{
+        font-size: 25px;
+    }
+}
+.icon-container {
+  gap: 20px;
+    display: flex;
+}
+.icon-container a {
+    color: #fff;
+    text-decoration: none;
+   font-size: 16px;
+}
+.navbar .navbar-links {
+    display: grid;
+    border-left: 1px solid var(--main-border-color);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    min-height: 15vh;
+    max-height: 15vh;
+   
+   
+}
+.navbar-links li {
+    list-style: none;
+}
+.navbar-links li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: flex;
+    height:100%;
+    font-size: 25px;
+    color: var(--secondary-color);
+    align-items: center;
+    justify-content: center;
+    transition: all 350ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.navbar-links li a.active {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+.navbar-links li a:hover {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+
+}
+.hero {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 45vh;
+    border-bottom: 1px solid var(--main-border-color);
+}
+.hero .hero-content {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 1em;
+    padding: 1em;
+    min-height: 45vh;
+    justify-content: center;
+    
+
+}
+.hero .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1em;
+    text-align: center;
+    min-height: 45vh;
+    justify-content: center;
+    border-left: 1px solid var(--main-border-color);
+}
+.hero .hero-content h1 {
+    color: var(--secondary-color);
+    font-size: 4em;
+    font-weight: 900;
+    line-height: 1em;
+}
+.hero .skills h1 {
+    font-size: 35px;
+    line-height: 45px;
+    color: var(--main-color);
+    text-shadow: -1px -1px 0 #fff1, 1px -1px 0 #fff1, -1px 1px 0 #fff1, 1px 1px 0 #fff1;
+    transition: all 550ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.hero .skills h1:hover {
+    color: var(--secondary-color);
+}
+.hero .skills img{
+    width: 70%;
+    border-radius: 6px;
+    outline: 10px solid #23272c;
+}
+.button {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 0px 35px;
+    height: 35pt;
+    border: 1px solid var(--main-border-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 900;
+}
+.button-container {
+    display: flex;
+    gap: 10px;
+    height: 35pt;
+    align-items: center;
+}
+.border-left {
+    height: 100%;
+    display: block;
+    background-color: #97979711;
+    width: 1px;
+}
+.about-me {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 35vh;
+    color: #fff;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+}
+.about-me h1 {
+    font-size: 55px;
+    font-weight: 300;
+}
+@media only screen and (max-width: 1060px) {
+    .hero {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-links {
+        border-top: 1px solid var(--main-border-color);
+        border-right: 1px solid var(--main-border-color);
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .hero {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .navbar-links {
+        width: 100%;
+        min-height: 2vh;
+        border-top: 1px solid var(--main-border-color);
+        border-right: 1px solid var(--main-border-color);
+    }
+    .navbar-links li a {
+        font-size: 15px;
+    }
+    .hero .hero-content h1 {
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width: 445px) {
+    .navbar-links {
+        width: 100%;
+        min-height: 2vh;
+        border-top: 1px solid var(--main-border-color);
+        border-right: 1px solid var(--main-border-color);
+    }
+    .navbar-links li a {
+        font-size: 15px;
+    }
+    .hero .hero-content h1 {
+        font-size: 35px;
+    }
+    .hero .hero-content p {
+        font-size: 15px;
+    }
+    .button-container {
+        flex-wrap: wrap;
+    }
+
+}
+.budget-box {
+    border-top: 1px solid #23272c;
+    padding: 30px;
+    font-size: 1.4em;
+}
+.profit-table {
+ 
+    border-collapse: collapse;
+width: 50%;
+margin: 9 auto;
+  }
+  @media only screen and (max-width:500px) {
+    .profit-table {
+        width: 100%;
+    }
+  }
+  .profit-table td, .profit-table th {
+   text-align: left;
+    padding: 10px;
+  }
+  
+  .profit-table tr:nth-child(even){background-color: #23272c;}
+  
+  .profit-table tr:hover {background-color: #23272c;}
+  
+  .profit-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    
+   
+    color: white;
+  }
