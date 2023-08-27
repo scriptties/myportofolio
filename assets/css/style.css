@@ -255,8 +255,9 @@ body {
 .profit-table {
  
     border-collapse: collapse;
-width: 50%;
-margin: 9 auto;
+    table-layout: fixed;
+    width: 50%;
+    margin: 9 auto;
   }
   @media only screen and (max-width:500px) {
     .profit-table {
@@ -264,7 +265,7 @@ margin: 9 auto;
     }
   }
   .profit-table td, .profit-table th {
-   text-align: left;
+    text-align: left;
     padding: 10px;
   }
   
