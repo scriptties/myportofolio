@@ -115,6 +115,7 @@ body {
     
 
 }
+
 .hero .skills {
     display: flex;
     flex-direction: column;
@@ -245,7 +246,6 @@ body {
     .button-container {
         flex-wrap: wrap;
     }
-
 }
 .budget-box {
     border-top: 1px solid #23272c;
