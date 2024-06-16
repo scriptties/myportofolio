@@ -285,3 +285,48 @@ body {
     background-color: #23272c;
     width: 50%;
   }
+
+  .img {
+    width: 40%;
+    border-radius: 6px;
+  }
+
+  .gig {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  .gigs {
+    width: 80%;
+    border-radius: 6px;
+  }
+
+  .img222 {
+    width: 30%;
+    border-radius: 8px;
+  }
+
+  
+  .imgrow {
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .imgcolumn {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+  .serdesc {
+   
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 0px 35px;
+    border: 1px solid var(--main-border-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+
+  }
