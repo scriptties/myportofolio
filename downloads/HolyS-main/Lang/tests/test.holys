@@ -1,0 +1,10 @@
+Holy main() -> int {
+    HolyScripttiesLet a: int HolyScripttiesBe 10 EndScripture
+    
+        a HolyScripttiesBe a * 2 EndScripture
+
+    Return a EndScripture
+}
+
+
+
